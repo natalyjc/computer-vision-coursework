@@ -72,17 +72,6 @@ def find_intersection(line1, line2):
         intersection = intersection / intersection[-1]
     return intersection
 
-def euclidean_distance(point1, point2):
-    # Normalize the points if they are not at infinity (w != 0)
-    if point1[2] != 0:
-        point1 = point1 / point1[2]
-    if point2[2] != 0:
-        point2 = point2 / point2[2]
-    
-    # Calculate the Euclidean distance
-    distance = np.sqrt((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2)
-    return distance
-
 def main():
     src_img = Image.open('basketball-court.ppm')
     
