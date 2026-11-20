@@ -19,13 +19,14 @@ First step is to take the points of four corners from the source image. In this 
 Through the direct linear transformation, we compute the homography matrix H.
 
 H from points:
-$$
+
+$
 \begin{bmatrix}
 1.05608717e-03 & -2.62644289e-03 & 5.16867430e-01\\
 -1.88360083e-03 & -9.95838145e-04 & 8.56057980e-01\\
 1.23622411e-07 & 4.13034800e-06 & 4.90900840e-04
 \end{bmatrix}
-$$
+$
 
 Then, this homography matrix was applied to the source image onto an output image of 940x500.
 
@@ -38,13 +39,14 @@ To compute DLT using lines, the source lines and destination lines were computed
 
 
 H from lines:
-$$
+
+$
 \begin{bmatrix}
 1.05608717e-03 & -2.62644289e-03 & 5.16867430e-01\\
 -1.88360083e-03 & -9.95838145e-04 & 8.56057980e-01\\
 1.23622411e-07 & 4.13034800e-06 & 4.90900840e-04
 \end{bmatrix}
-$$
+$
 
 DLT using lines:
 ![DLT using lines](dlt_using_lines.jpg)
